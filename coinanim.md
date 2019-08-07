@@ -1,23 +1,26 @@
-# BiFang (毕方)
+# Creator 快速开发组件：BFCoinAnim
+## 
+## 本期介绍的组件是：BFCoinAnim
+金币增加的动画在很多项目中都是常见的需求，作者文章写的不好，直接看动图演示效果。
+使用步骤步骤非常简单：
+</br>
+1.把 BFCoinAnim.ts复制放到你的项目目录中
+</br>
+2.设置动画的纹理：
+```
+BFCoinAnim.SetCoinTexture(cc.SpriteFrame)
+```
+</br>
+3.在需要播放动画的时候调用
 
-![](./res/BiFang.jpg)
+```
+cc.game.emit("bf-coin-add-anim",start: cc.Vec2 | cc.Node,end: cc.Vec2 | cc.Node,count)
+```
+</br>
 
-## 大家好
-我是毕方的作者，想维护一个Cocos Creator 组件化快速开发框架，这需要投入时间与精力。社区的活跃是作者的动力。
-作者水平不高，有什么说不对的请指正。
+![](./coinanim.gif)
 
-* 做开源需要投入时间和精力，社区的活跃是作者的动力，star上10颗星，更新新内容
-
-## 关于
-BiFang是专门为Cocos Creator快速开发而生的，专注于组件化的探索。
-追求极简的使用方式，对原有系统最小的侵入
-
-## 正文
-
-##### 组件-金币动画：[BFCoinAnim.ts](./assets/bf/BFCoinAnim.ts)
-![](./res/coinanim.gif)
-
-使用：
+完整的使用API：
 ```
 1.配置
      必须设置金币动画的纹理：
@@ -25,7 +28,7 @@ BiFang是专门为Cocos Creator快速开发而生的，专注于组件化的探�
          2. BFCoinAnim.SetCoinResources(string) //动态加载纹理，传入路径
      其它设置：(非必填)
          1.SetAnimCountMax(number)
-         2.setAnimRotate(boolean)
+         2.SetAnimRotate(boolean)
 2.调用
      方法1：
          new BFCoinAnim().ReadPlay(start: cc.Vec2 | cc.Node,end: cc.Vec2 | cc.Node,count)
@@ -57,3 +60,9 @@ export default class CoinAnimScene extends cc.Component {
 
 }
 ```
+
+## 关于 [BiFang](https://github.com/KnifeStone/BiFang)
+BiFang是专门为Cocos Creator快速开发而生的，专注于组件化的探索。
+追求极简的使用方式，对原有系统最小的侵入
+
+[https://github.com/KnifeStone/BiFang](https://github.com/KnifeStone/BiFang)
