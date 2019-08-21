@@ -11,7 +11,7 @@
 const {ccclass, property} = cc._decorator;
 
 @ccclass
-export default class BLayoutWechatApps extends cc.Component {
+export default class BLayoutWechatApp extends cc.Component {
 
     @property(cc.Node)
     itemTemplate: cc.Node = null;
@@ -19,64 +19,62 @@ export default class BLayoutWechatApps extends cc.Component {
     @property(cc.Node)
     layoutContainer: cc.Node = null;
 
-    @property([cc.String])
-    names:string[] = []
+    @property(cc.JsonAsset)
+    json:cc.JsonAsset = null
 
-    @property([cc.SpriteFrame])
-    icons:cc.SpriteFrame[] = []
-
-    @property([cc.SpriteFrame])
-    appids:cc.SpriteFrame[] = []
+    @property
+    resourcesFolder:string = ""
 
     onLoad () {
         this.itemTemplate.parent = null
-        this.initView(this.layoutContainer,this.itemTemplate,this.names,this.icons)
+        this.initView(this.layoutContainer,this.itemTemplate,this.json.json)
         //重新裁剪尺寸
         let childrenCount = this.layoutContainer.childrenCount
-        if(childrenCount<5){
-            this.layoutContainer.width = (this.itemTemplate.width+10)*childrenCount + 10
-            
-        }
+        this.layoutContainer.width = this.itemTemplate.width*childrenCount + 20
         if(this.node.width > this.layoutContainer.width){
             this.node.width = this.layoutContainer.width
             this.layoutContainer.x = -this.node.width/2
         }else{
+            this.layoutContainer.x = -this.node.width/2
             //播放动画
             let width = this.layoutContainer.width - this.node.width
-            let a1 = cc.moveBy(width/100,-width,0)
-            let a2 = cc.delayTime(0.2)
-            let a3 = cc.moveBy(width/100,width,0)
-            let a4 = cc.delayTime(0.2)
+            let a1 = cc.moveBy(width/50,-width,0).easing(cc.easeBackOut())
+            let a2 = cc.delayTime(0.8)
+            let a3 = cc.moveBy(width/50,width,0).easing(cc.easeBackOut())
+            let a4 = cc.delayTime(0.8)
             let spawn = cc.sequence(a1,a2,a3,a4).repeatForever()
             this.layoutContainer.runAction(spawn)
         }
     }
 
-    initView(layout:cc.Node,item:cc.Node,names:string[],icons:cc.SpriteFrame[]){
-        for(let i=0;i<names.length;i++){
-            if(i >= icons.length){
-                return
-            }
+    initView(layout:cc.Node,item:cc.Node,arr:string[]){
+        for(let i=0;i<arr.length;i++){
+            let bean = arr[i]
             let node = cc.instantiate(item)
             layout.addChild(node)
-            cc.find("MaskIcon/ImgIcon",node).getComponent(cc.Sprite).spriteFrame = icons[i]
-            node.getChildByName("Name").getComponent(cc.Label).string = names[i]
+            node.on("click",this.onClickItem)
+            node.getChildByName("Name").getComponent(cc.Label).string = ``
+            node.name = bean["appid"]
+            cc.loader.loadRes(`${this.resourcesFolder}/${bean["appid"]}`,cc.SpriteFrame,(err,res)=>{
+                !err && (cc.find("MaskIcon/ImgIcon",node).getComponent(cc.Sprite).spriteFrame = res )
+                node.getChildByName("Name").getComponent(cc.Label).string = bean["name"]
+            })
         }
     }
 
-    onClickItem(){
+    onClickItem(event){
+        let appid = event.node.name
         //跳转到微信小游戏
-        
-        // window["wx"] && window["wx"].navigateToMiniProgram({
-        //     appId: this.appid,
-        //     path: '',
-        //     extraData: {
-        //     },
-        //     envVersion: 'release',
-        //     success(res) {
-        //       // 打开成功
-        //     }
-        //   })
+        window["wx"] && window["wx"].navigateToMiniProgram({
+            appId: appid,
+            path: '',
+            extraData: {
+            },
+            envVersion: 'release',
+            success(res) {
+              // 打开成功
+            }
+        })
     }
 
     update (dt) {
