@@ -1,4 +1,4 @@
-import BFCoinAnim from "../../bf/BFCoinAnim";
+import BFActionMore from "../../bf/BFActionMore";
 
 // Learn TypeScript:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
@@ -22,13 +22,9 @@ export default class CoinAnimScene extends cc.Component {
 
     onLoad() {
         //初始化
-        BFCoinAnim.SetCoinTexture(this.coinTexture)
-        BFCoinAnim.SetAnimRotate(true)
         this.node.on(cc.Node.EventType.TOUCH_START, function (event: cc.Event.EventTouch) {
-            //方法1
-            new BFCoinAnim().ReadPlay(event.getLocation(), this.endNode, 30)
-            //方法2
-            // cc.game.emit("bf-coin-add-anim", event.getLocation(), this.endNode, 30)
+            let config = BFActionMore.CloneConfig()
+            BFActionMore.Run(50,event.getLocation(), this.endNode,null)
         }.bind(this))
     }
 

@@ -25,6 +25,7 @@ export default class Launch extends cc.Component {
     btnTemplate: cc.Node = null
 
     onLoad () {
+        cc.director.loadScene("CoinAnimScene")
         this.btnTemplate.parent = null
         let arr = [
             ToItem("微信友情跳转","WXAppScene")
