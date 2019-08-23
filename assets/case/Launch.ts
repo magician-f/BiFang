@@ -1,3 +1,5 @@
+import ActionFactory from "../bf/ActionFactory";
+
 // Learn TypeScript:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/typescript.html
@@ -25,6 +27,8 @@ export default class Launch extends cc.Component {
     btnTemplate: cc.Node = null
 
     onLoad () {
+        
+        cc.director.loadScene("CoinAnimScene")
         this.btnTemplate.parent = null
         let arr = [
             ToItem("微信友情跳转","WXAppScene")
