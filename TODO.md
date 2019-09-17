@@ -7,6 +7,8 @@
 
 [流体模拟](https://github.com/liuwenkai1023/ccc-fluid-demo)
 
+[六边消除源码](https://github.com/zx6733090/SixClear)
+
 
 ##### 工具
 
