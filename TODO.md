@@ -17,3 +17,5 @@
 [imagemagick 图片压缩](http://www.imagemagick.com.cn/command_line_tools.html)
 
 [Node.js脚本，自动化列出工程里有哪些资源可删除](https://github.com/foupwang/AssetCleanerForCocosCreator)
+
+[yue19870813 Cocos Demo](https://github.com/yue19870813/CocosDemo)
