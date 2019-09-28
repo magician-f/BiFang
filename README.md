@@ -1,6 +1,6 @@
 # BiFang (毕方)
 
-![](./res/BiFang.jpg)
+![](./res/logo.jpg)
 
 ## 大家好
 我是毕方的作者，想维护一个Cocos Creator 组件化快速开发框架，这需要投入时间与精力。社区的活跃是作者的动力。
