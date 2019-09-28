@@ -1,4 +1,4 @@
-import BFActionMore from "../../bf/BFActionMore";
+import BFActionMore, { Action70, ActionRound } from "./BFActionMore";
 
 // Learn TypeScript:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
@@ -24,7 +24,23 @@ export default class CoinAnimScene extends cc.Component {
         //初始化
         this.node.on(cc.Node.EventType.TOUCH_START, function (event: cc.Event.EventTouch) {
             let config = BFActionMore.CloneConfig()
-            BFActionMore.Run(50,event.getLocation(), this.endNode,null)
+            switch(Math.floor(Math.random()*3)){
+                case 1:
+                    config.Action = new ActionRound()
+                break;
+                case 2:
+                    config.Action = new Action70()
+                break;
+            }
+            BFActionMore.Run(30,event.getLocation(), this.endNode,{
+                progressFunc:(progress,count)=>{
+                console.log("progress",progress,count)
+            },
+                finishFunc:()=>{
+                console.log("finishFunc")
+            },
+                config:config
+            })
         }.bind(this))
     }
 

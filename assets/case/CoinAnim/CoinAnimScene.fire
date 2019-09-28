@@ -41,8 +41,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.42009464017991005,
-      "y": 0.42009464017991005,
+      "x": 0.543017578125,
+      "y": 0.543017578125,
       "z": 1
     },
     "_quat": {
@@ -237,8 +237,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 280,
-      "height": 40
+      "width": 224,
+      "height": 32
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -282,8 +282,8 @@
     "_useOriginalSize": false,
     "_string": "请点击任意位置",
     "_N$string": "请点击任意位置",
-    "_fontSize": 40,
-    "_lineHeight": 40,
+    "_fontSize": 32,
+    "_lineHeight": 32,
     "_enableWrapText": true,
     "_N$file": null,
     "_isSystemFontUsed": true,
@@ -332,8 +332,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 9,
-      "y": -97,
+      "x": -13,
+      "y": 222,
       "z": 0
     },
     "_scale": {
