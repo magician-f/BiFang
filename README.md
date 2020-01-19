@@ -58,9 +58,12 @@ export default class CoinAnimScene extends cc.Component {
 }
 ```
 ### Cocos Creator 学习资源
-+ 插件推荐
++ 插件
   + [场景编辑器右键菜单插件](https://github.com/caogtaa/CCSceneMenu/tree/master)  ![](https://img.shields.io/badge/v2.2.2-lightgrey.svg)
-+ Github项目推荐
++ 项目
   + [贝塞尔路径编辑器](https://github.com/csdjk/BezierCurvePathCreater) ![](https://img.shields.io/badge/v2.2.2-lightgrey.svg)
   + [Shader Effect Demo](https://github.com/zhitaocai/CocosCreatorShaderEffectDemo) ![](https://img.shields.io/badge/v2.2.1-lightgrey.svg)
++ 工具
+  + [TypeScript脚本解释器，微信热更新方案](https://gitee.com/jianyumofa/qyscript)
+
   
