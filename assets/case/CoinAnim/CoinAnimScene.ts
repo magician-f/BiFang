@@ -32,7 +32,7 @@ export default class CoinAnimScene extends cc.Component {
                     config.Action = new Action70()
                 break;
             }
-            BFActionMore.Run(30,event.getLocation(), this.endNode,{
+            bf.RunGoldGold(30,event.getLocation(), this.endNode,{
                 progressFunc:(progress,count)=>{
                 console.log("progress",progress,count)
             },

@@ -1,0 +1,23 @@
+
+{
+    "name":"bf",
+    "version":"1.0.0",
+    "description":"毕方快速开发框架",
+    "author":"https://github.com/KnifeStone/BiFang",
+    "main":"main.js",
+    "main-menu":{
+        "毕方1.0.0/hello":{
+            "message":"bf:sync-hello"
+        }
+    },
+    "runtime-resource": {
+        "path": "src",
+        "name": "lib"
+    },
+    "reload": {
+        "ignore": [
+          "src/**/*"
+        ]
+    }
+    
+}

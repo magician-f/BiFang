@@ -1,5 +1,5 @@
 
-export default class BFActionMore{
+class GoldAction{
 
     //=========== 配置 ===========
 
@@ -19,56 +19,6 @@ export default class BFActionMore{
         }
         return config
     }
-
-    //=========== 使用 ============
-
-    /**
-    * @param {number}           count   数量
-    * @param {cc.Node|cc.Vec2}  start   开始的节点或位置 (世界坐标
-    * @param {cc.Node|cc.Vec2}  end     结束的节点或位置 (世界坐标
-    * @param {Param}            param   其它非必填参数
-        config:Config
-        progressFunc:Function
-        finishFunc:Function
-    */
-    static Run(count:number,start:cc.Node|cc.Vec2,end:cc.Node|cc.Vec2,param:any) {
-        param.config = param.config || BFActionMore.CloneConfig()
-        let startPos, endPos
-        if (start instanceof cc.Node) {
-            startPos = start.convertToWorldSpaceAR(cc.Vec2.ONE)
-        } else if (start instanceof cc.Vec2) {
-            startPos = start
-        }
-        if (end instanceof cc.Node) {
-            endPos = end.convertToWorldSpaceAR(cc.Vec2.ONE)
-        } else if (end instanceof cc.Vec2) {
-            endPos = end
-        }
-        if (!startPos || !endPos || !count) {
-            console.warn("参数有误",arguments)
-            return
-        }
-        if(end instanceof cc.Node){
-            if(!param.config.SpriteFrame){
-                //没有纹理，要去取目标节点的纹理
-                param.config.SSpriteFrame(end.getComponent(cc.Sprite).spriteFrame,end.width,end.height)
-            }
-        }
-        if(!param.config.SpriteFrame){
-            console.warn("没有找到纹理") 
-            return
-        }
-        if(!param.config.Action){
-            param.config.Action = new ActionDispersal()
-        }
-        if (param.count > param.config.MaxCount) {
-            param.count = param.config.MaxCount
-        }
-        param.startPos = startPos
-        param.endPos = endPos
-        param.count = count
-        new BFActionMore(param)
-    }
     
     /**
         config:Config
@@ -78,7 +28,7 @@ export default class BFActionMore{
         progressFunc:Function
         finishFunc:Function
      */
-    private constructor(param:any){
+    constructor(param:any){
         let count = param.count
         let config = param.config
         let startPos = param.startPos
@@ -148,12 +98,12 @@ export class Config{
     }
     
 }
-export interface ActionI{
+interface ActionI{
     actionCreate(index:number,total:number,startPos:cc.Vec2,endPos:cc.Vec2,size:cc.Size):cc.FiniteTimeAction
     actionMove(index:number,total:number,startPos:cc.Vec2,endPos:cc.Vec2,size:cc.Size):cc.FiniteTimeAction
 }
 
-export class ActionDispersal implements ActionI{
+class ActionDispersal implements ActionI{
 
     actionCreate(index:number,total:number,startPos:cc.Vec2,endPos:cc.Vec2,size:cc.Size):cc.FiniteTimeAction{
         let moveX = Math.random() * 200
@@ -172,7 +122,7 @@ export class ActionDispersal implements ActionI{
     }
    
 }
-export class ActionRound implements ActionI{
+class ActionRound implements ActionI{
 
     actionCreate(index:number,total:number,startPos:cc.Vec2,endPos:cc.Vec2,size:cc.Size):cc.FiniteTimeAction{
         let points = this._getPoint(100,startPos.x,startPos.y,total)
@@ -202,7 +152,7 @@ export class ActionRound implements ActionI{
     }
 
 }
-export class Action70 implements ActionI{
+class Action70 implements ActionI{
 
     points = [
         [-4,2],[-3,2],[-2,2],[-1,2],[-1,1],[-1,0],[-1,-1],[-1,-2],[-1,-3],
@@ -232,4 +182,52 @@ export class Action70 implements ActionI{
         return action
     }
 
+}
+!window.bf && (window.bf = {})
+/**
+* @param {number}           count   数量
+* @param {cc.Node|cc.Vec2}  start   开始的节点或位置 (世界坐标
+* @param {cc.Node|cc.Vec2}  end     结束的节点或位置 (世界坐标
+* @param {Param}            param   其它非必填参数
+    config:Config
+    progressFunc:Function
+    finishFunc:Function
+*/
+bf.RunGoldGold = function(count:number,start:cc.Node|cc.Vec2,end:cc.Node|cc.Vec2,param:any) {
+    param.config = param.config || GoldAction.CloneConfig()
+    let startPos, endPos
+    if (start instanceof cc.Node) {
+        startPos = start.convertToWorldSpaceAR(cc.Vec2.ONE)
+    } else if (start instanceof cc.Vec2) {
+        startPos = start
+    }
+    if (end instanceof cc.Node) {
+        endPos = end.convertToWorldSpaceAR(cc.Vec2.ONE)
+    } else if (end instanceof cc.Vec2) {
+        endPos = end
+    }
+    if (!startPos || !endPos || !count) {
+        console.warn("参数有误",arguments)
+        return
+    }
+    if(end instanceof cc.Node){
+        if(!param.config.SpriteFrame){
+            //没有纹理，要去取目标节点的纹理
+            param.config.SSpriteFrame(end.getComponent(cc.Sprite).spriteFrame,end.width,end.height)
+        }
+    }
+    if(!param.config.SpriteFrame){
+        console.warn("没有找到纹理") 
+        return
+    }
+    if(!param.config.Action){
+        param.config.Action = new ActionDispersal()
+    }
+    if (param.count > param.config.MaxCount) {
+        param.count = param.config.MaxCount
+    }
+    param.startPos = startPos
+    param.endPos = endPos
+    param.count = count
+    new GoldAction(param)
 }
