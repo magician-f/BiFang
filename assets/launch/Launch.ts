@@ -28,7 +28,9 @@ export default class Launch extends cc.Component {
     onLoad () {
         this.btnTemplate.parent = null
         let arr = [
-            ToItem("CoinAnimScene","CoinAnimScene")
+            ToItem("CoinAction","CoinAction"),
+            ToItem("Action","Action"),
+            ToItem("Physics","Physics"),
         ]
         for(let i=0;i<arr.length;i++){
             let bean = arr[i]

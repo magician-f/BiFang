@@ -1,65 +1,41 @@
-declare namespace bf {
-  function RunGoldGold(count:number,start:cc.Node|cc.Vec2,end:cc.Node|cc.Vec2,param:any) {}
+declare namespace bfCoinAction {
+  export class Config {
+    SpriteFrame: cc.SpriteFrame = null
+    MaxCount: number = 999
+    Action: T<ActionI> = null
+    Size: cc.Size = new cc.Size(0, 0)
+    SSpriteFrame(SpriteFrame: cc.SpriteFrame, Width?: number, Height?: number): Config
+  }
+  /**
+  * @param {number}           count   数量
+  * @param {cc.Node|cc.Vec2}  start   开始的节点或位置 (世界坐标
+  * @param {cc.Node|cc.Vec2}  end     结束的节点或位置 (世界坐标
+  * @param {config}           config   配置
+  * @param {Function}         progressFunc   进度回调
+  * @param {Function}         finishFunc   完成回调
+  */
+  function Run(param: {
+    count: number,
+    start: cc.Node | cc.Vec2,
+    end: cc.Node | cc.Vec2,
+    config?: Config,
+    progressFunc?: Function
+    finishFunc?: Function
+  })
+  function GDefaultConfig(): Config
+  function SDefaultConfig(config: Config)
+  function CloneConfig(): Config
+  interface ActionI {
+    actionCreate(index: number, total: number, startPos: cc.Vec2, endPos: cc.Vec2, size: cc.Size): cc.FiniteTimeAction
+    actionMove(index: number, total: number, startPos: cc.Vec2, endPos: cc.Vec2, size: cc.Size): cc.FiniteTimeAction
+  }
+  class ActionDispersal implements ActionI { }
+  class ActionRound implements ActionI { }
 }
-interface Math {
-	/**
-	 * 随机数
-	 *  不传参数、不合法的参数，效果等同于[Math.random()]
-	 *  如果[min][max]中有小数，[isDecimal]自动为true
-	 * @param min 		最小数
-	 * @param max 		最大数
-	 * @param isDecimal 是否有小数
-	   Test Code
-	   console.log(Math.Random()) 			//0-1
-	   console.log(Math.Random("11","22"))	//0-1
-	   console.log(Math.Random("aa","bb"))	//0-1
-	   console.log(Math.Random(1,3))		//1-3
-	   console.log(Math.Random(1,3,true))	//1.0-3.0
-	   console.log(Math.Random(1.5,2.5))	//1.5-2.5
-	   console.log(Math.Random(1.5,2.5,true))//1.5-2.5
-	 */
-    Random(min: number, max: number, isDecimal: boolean): number
-    
-    /**
-     * 角度转弧度
-     * @param degree 角度
-       Test Code
-       console.log(0,Math.DegreeToRadian(0))	//0
-       console.log(45,Math.DegreeToRadian(45))	//0.25π
-       console.log(90,Math.DegreeToRadian(90))	//0.5π
-	   console.log(180,Math.DegreeToRadian(180))//1π
-       console.log(270,Math.DegreeToRadian(270))//1.5π
-       console.log(360,Math.DegreeToRadian(360))//2π
-     */
-	DegreeToRadian(degree:number):number
+declare namespace bf {
 
-	/**
-     * 弧度转角度
-     * @param radian 弧度
-       Test Code
-       console.log("0",Math.RadianToDegree(0))
-       console.log("0.25*Math.PI",Math.RadianToDegree(0.25*Math.PI))
-       console.log("0.5*Math.PI",Math.RadianToDegree(0.5*Math.PI))
-       console.log("1*Math.PI",Math.RadianToDegree(1*Math.PI))
-       console.log("1.5*Math.PI",Math.RadianToDegree(1.5*Math.PI))
-       console.log("2*Math.PI",Math.RadianToDegree(2*Math.PI))
-     */
-	RadianToDegree(radian:number):number
-
-	/**
-     * 向量转角度
-     * @param vec 
-       Test Code
-       console.log({x:1,y:0},Math.Vec2Angle({x:1,y:0}))
-       console.log({x:1,y:0.5},Math.Vec2Angle({x:1,y:0.5}))
-       console.log({x:1,y:1},Math.Vec2Angle({x:1,y:1}))
-       console.log({x:1,y:2},Math.Vec2Angle({x:1,y:2}))
-       console.log({x:0,y:1},Math.Vec2Angle({x:0,y:1}))
-       console.log({x:-1,y:1},Math.Vec2Angle({x:-1,y:1}))
-       console.log({x:-1,y:0},Math.Vec2Angle({x:-1,y:0}))
-       console.log({x:-1,y:-1},Math.Vec2Angle({x:-1,y:-1}))
-       console.log({x:0,y:-1},Math.Vec2Angle({x:0,y:-1}))
-       console.log({x:1,y:-1},Math.Vec2Angle({x:1,y:-1}))
-     */
-    Vec2Angle(vec:cc.Vec2):number
+}
+interface Window {
+  bf: bf,
+  bfCoinAction: bfCoinAction
 }

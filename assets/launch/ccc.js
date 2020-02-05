@@ -1,1 +1,0 @@
-window["bfff"] = {a:1}

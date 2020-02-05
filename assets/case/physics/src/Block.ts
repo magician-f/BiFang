@@ -8,27 +8,25 @@
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
 
-const {ccclass, property} = cc._decorator;
+const { ccclass, property } = cc._decorator;
 
 @ccclass
-export default class NewClass extends cc.Component {
+export default class Block extends cc.Component {
 
-    onLoad () {
-        this.node.parent = null
-        cc.game.addPersistRootNode(this.node)
-        this.node.on("click",()=>{
-            cc.director.loadScene("Launch")
-        })
-    }
+    @property(cc.Prefab)
+    prefabClearParticle: cc.Prefab = null;
 
-    update (dt) {
-        if(cc.director.getScene().name != "Launch"){
-            this.node.opacity = 255
-        }else{
-            this.node.opacity = 0
+    /**
+    * 只在两个碰撞体开始接触时被调用一次
+    */
+    onBeginContact(contact, selfCollider, otherCollider) {
+        if (otherCollider.node.name == "Ball") {
+            let node = cc.instantiate(this.prefabClearParticle)
+            this.node.parent.addChild(node)
+            node.position = this.node.position
+            this.node.destroy()
         }
-        
-
+        // cc.log("onBeginContact", otherCollider.node.name);
     }
-}
 
+}
