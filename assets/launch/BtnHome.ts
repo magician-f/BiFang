@@ -39,8 +39,6 @@ export default class NewClass extends cc.Component {
 
         this.node.x = 0 + this.node.width / 2 + 8
         this.node.y = this.targetY
-        "asdas".Clamp()
-        Math.Random()
     }
 
     update(dt) {

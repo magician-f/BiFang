@@ -26,6 +26,7 @@ export default class Ball extends cc.Component {
         if (this.angularVelocity) {
             this.rigidBody.angularVelocity = this.angularVelocity;
         }
+        GLoading.Show
     }
     /**
      * 给刚体施力，力的参数由组件属性控制

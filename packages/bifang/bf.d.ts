@@ -33,7 +33,10 @@ declare namespace bfCoinAction {
   class ActionRound implements ActionI { }
 }
 declare namespace bf {
-
+  export class Loading {
+    ShowLoading()
+  }
+   
 }
 interface Window {
   bf: bf,
