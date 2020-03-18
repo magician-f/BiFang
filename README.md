@@ -63,6 +63,7 @@ export default class CoinAnimScene extends cc.Component {
 + 项目
   + [贝塞尔路径编辑器](https://github.com/csdjk/BezierCurvePathCreater) ![](https://img.shields.io/badge/v2.2.2-lightgrey.svg)
   + [Shader Effect Demo](https://github.com/zhitaocai/CocosCreatorShaderEffectDemo) ![](https://img.shields.io/badge/v2.2.1-lightgrey.svg)
+  + [模仿微博下拉刷新控件](https://github.com/baiguo/cocos-pull-to-refresh)
 + 工具
   + [TypeScript脚本解释器，微信热更新方案](https://gitee.com/jianyumofa/qyscript)
 
