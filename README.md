@@ -2,15 +2,11 @@
 
 ![](./res/BiFang.jpg)
 
-## 大家好
-我是毕方的作者，想维护一个Cocos Creator 组件化快速开发框架，这需要投入时间与精力。社区的活跃是作者的动力。
-作者水平不高，有什么说不对的请指正。
-
-* 做开源需要投入时间和精力，社区的活跃是作者的动力，star上10颗星，更新新内容
-
 ## 关于
 BiFang是专门为Cocos Creator快速开发而生的，专注于组件化的探索。
 追求极简的使用方式，对原有系统最小的侵入
+
+同时毕方也在收集Cocos Creator周边插件，项目，以及游戏开发提高效率的相关工具
 
 ## 正文
 
@@ -66,5 +62,6 @@ export default class CoinAnimScene extends cc.Component {
   + [模仿微博下拉刷新控件](https://github.com/baiguo/cocos-pull-to-refresh)
 + 工具
   + [TypeScript脚本解释器，微信热更新方案](https://gitee.com/jianyumofa/qyscript)
+  + [字蛛是一个中文字体压缩器](http://font-spider.org/)
 
   
