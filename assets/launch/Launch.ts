@@ -30,7 +30,6 @@ export default class Launch extends cc.Component {
         let arr = [
             ToItem("CoinAction","CoinAction"),
             ToItem("Action","Action"),
-            ToItem("Physics","Physics"),
         ]
         for(let i=0;i<arr.length;i++){
             let bean = arr[i]
