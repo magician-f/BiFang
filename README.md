@@ -20,6 +20,7 @@ BiFang是专门为Cocos Creator快速开发而生的，专注于组件化的探�
 + 插件
   + [查找资源引用插件](https://forum.cocos.org/t/topic/90565)
   + [场景编辑器右键菜单插件](https://github.com/caogtaa/CCSceneMenu/tree/master)  ![](https://img.shields.io/badge/v2.2.2-lightgrey.svg)
+  + [属性自动绑定工具](https://forum.cocos.org/t/topic/91159)
 + 项目
   + [贝塞尔路径编辑器](https://github.com/csdjk/BezierCurvePathCreater) ![](https://img.shields.io/badge/v2.2.2-lightgrey.svg)
   + [Shader Effect Demo](https://github.com/zhitaocai/CocosCreatorShaderEffectDemo) ![](https://img.shields.io/badge/v2.2.1-lightgrey.svg)
