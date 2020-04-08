@@ -30,6 +30,7 @@ BiFang是专门为Cocos Creator快速开发而生的，专注于组件化的探�
 + 工具
   + [TypeScript脚本解释器，微信热更新方案](https://gitee.com/jianyumofa/qyscript)
   + [字蛛是一个中文字体压缩器](http://font-spider.org/)
+  + [JavaScript混淆器工具](https://github.com/javascript-obfuscator/javascript-obfuscator)
 
 + 进阶
   + [Cocos 2.3 Shader 编写示例](https://forum.cocos.org/t/cocos-2-3-shader/90789)
