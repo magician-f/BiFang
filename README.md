@@ -15,7 +15,6 @@ BiFang是专门为Cocos Creator快速开发而生的，专注于组件化的探�
 ![](./document/image/coinanim.gif)
 
 #### Cocos Creator 学习资源
-```
 + 插件
   + [查找资源引用插件](https://forum.cocos.org/t/topic/90565)
   + [场景编辑器右键菜单插件](https://github.com/caogtaa/CCSceneMenu/tree/master)  ![](https://img.shields.io/badge/v2.2.2-lightgrey.svg)
@@ -36,5 +35,4 @@ BiFang是专门为Cocos Creator快速开发而生的，专注于组件化的探�
 + 进阶
   + [Cocos 2.3 Shader 编写示例](https://forum.cocos.org/t/cocos-2-3-shader/90789)
   
- ```
   
