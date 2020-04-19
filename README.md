@@ -35,4 +35,7 @@ BiFang是专门为Cocos Creator快速开发而生的，专注于组件化的探�
 + 进阶
   + [Cocos 2.3 Shader 编写示例](https://forum.cocos.org/t/cocos-2-3-shader/90789)
   
++ 其他
+  + [字体：丁卯体](https://3type.cn/fonts/dinkie_bitmap/index.html)
+  
   
