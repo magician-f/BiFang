@@ -31,6 +31,7 @@ BiFang是专门为Cocos Creator快速开发而生的，专注于组件化的探�
   + [字蛛是一个中文字体压缩器](http://font-spider.org/)
   + [JavaScript混淆器工具](https://github.com/javascript-obfuscator/javascript-obfuscator)
   + [网页调试工具，运行时查看、修改节点树，实时更新节点属性，可视化显示缓存资源](https://github.com/potato47/ccc-devtools)
+  + [JavaScript混淆器工具](https://github.com/javascript-obfuscator/javascript-obfuscator/)
   
 + 组件
   + [分享一个UI左右无限翻页组件](https://forum.cocos.org/t/ui/91675)
