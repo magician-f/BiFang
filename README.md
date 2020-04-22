@@ -39,6 +39,12 @@ BiFang是专门为Cocos Creator快速开发而生的，专注于组件化的探�
 + 进阶
   + [Cocos 2.3 Shader 编写示例](https://forum.cocos.org/t/cocos-2-3-shader/90789)
   
++ VS Code插件推荐
+  + Beautify  : 可以放大标记，调整代码间距，快速格式化代码
+  + indent-rainbow  : 提示我们的缩进是否到位，每步交替四种不同的颜色，没有到位的话颜色变红
+  + Rainbow Brackets : 为圆括号，方括号和弯曲的括号提供彩色；相同颜色表示相同级别的括号，孤立的右括号以红色突出显示
+  + Polacode-2019 : 可以把代码保存成美观的图片，主题不同，代码配色方案也不同，也可以自己设置边框颜色、大小、阴影
+  
 + 其他
   + [字体：丁卯体](https://3type.cn/fonts/dinkie_bitmap/index.html)
   
