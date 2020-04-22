@@ -25,7 +25,7 @@ BiFang是专门为Cocos Creator快速开发而生的，专注于组件化的探�
   + [模仿微博下拉刷新控件](https://github.com/baiguo/cocos-pull-to-refresh)
   + [简单技巧，谁都能写出无限循环列表](https://forum.cocos.org/t/topic/90647/9) 2020.03.27
   + [有做大型RPG或SLG游戏需求的朋友请进，有在线地图编辑器](https://forum.cocos.org/t/rpg-slg/90542) 2020.03.24
-  + 
+  + [自动使用tinypng压缩打包后文件](https://github.com/dadidzf/CodeJam)
 + 工具
   + [TypeScript脚本解释器，微信热更新方案](https://gitee.com/jianyumofa/qyscript)
   + [字蛛是一个中文字体压缩器](http://font-spider.org/)
