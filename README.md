@@ -47,5 +47,6 @@ BiFang是专门为Cocos Creator快速开发而生的，专注于组件化的探�
   
 + 其他
   + [字体：丁卯体](https://3type.cn/fonts/dinkie_bitmap/index.html)
+  + [字体：Zpix](https://github.com/SolidZORO/zpix-pixel-font)
   
   
