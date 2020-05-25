@@ -50,5 +50,5 @@ BiFang是专门为Cocos Creator快速开发而生的，专注于组件化的探�
   
   
 
-[001基础类型]: (https://github.com/KnifeStone/BiFang/document/markdown/TypeScript/001基础类型.md)
+[001基础类型]: https://github.com/KnifeStone/BiFang/tree/master/document/markdown/TypeScript/001基础类型.md
 
