@@ -1,6 +1,6 @@
 # BiFang (毕方)
 
-<img src="./document/image/BiFang.jpg" width="20%"/>
+<img src="https://github.com/KnifeStone/BiFang/tree/master/document/image/BiFang.jpg" width="20%"/>
 
 ## 关于
 BiFang是专门为Cocos Creator快速开发而生的，专注于组件化的探索。
