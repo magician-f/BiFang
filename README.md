@@ -8,11 +8,10 @@ BiFang是专门为Cocos Creator快速开发而生的，专注于组件化的探�
 
 同时毕方也在收集Cocos Creator周边插件，项目，以及游戏开发提高效率的相关工具
 
-#### 组件
+#### TypeScript系列 极力推荐使用ts 提高开发效率
 
-* [金币动画 coinAnim.md](./document/coinAnim.md)
+* [001 基础类型][001 基础类型]
 
-![](./document/image/coinanim.gif)
 
 #### Cocos Creator 学习资源
 + 插件
@@ -50,3 +49,5 @@ BiFang是专门为Cocos Creator快速开发而生的，专注于组件化的探�
   + [字体：Zpix](https://github.com/SolidZORO/zpix-pixel-font)
   
   
+
+[001 基础类型]: https://github.com/KnifeStone/BiFang/document/markdown/TypeScript/001 基础类型.md
