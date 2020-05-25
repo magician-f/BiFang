@@ -10,7 +10,7 @@ BiFang是专门为Cocos Creator快速开发而生的，专注于组件化的探�
 
 #### TypeScript系列 极力推荐使用ts 提高开发效率
 
-* [001 基础类型][001 基础类型]
+* [001 基础类型][001基础类型]
 
 
 #### Cocos Creator 学习资源
@@ -50,4 +50,5 @@ BiFang是专门为Cocos Creator快速开发而生的，专注于组件化的探�
   
   
 
-[001 基础类型]: https://github.com/KnifeStone/BiFang/document/markdown/TypeScript/001 基础类型.md
+[001基础类型]: (https://github.com/KnifeStone/BiFang/document/markdown/TypeScript/001基础类型.md)
+
