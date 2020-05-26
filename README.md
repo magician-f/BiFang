@@ -8,9 +8,10 @@ BiFang是专门为Cocos Creator快速开发而生的，专注于组件化的探�
 
 同时毕方也在收集Cocos Creator周边插件，项目，以及游戏开发提高效率的相关工具
 
-#### TypeScript系列 极力推荐使用ts 提高开发效率
+#### 重学TypeScript系列 极力推荐使用ts 提高开发效率
 
 * [001 基础类型][001基础类型]
+* [002 变量声明][002变量声明]
 
 
 #### Cocos Creator 学习资源
@@ -51,4 +52,5 @@ BiFang是专门为Cocos Creator快速开发而生的，专注于组件化的探�
   
 
 [001基础类型]: https://github.com/KnifeStone/BiFang/tree/master/document/markdown/TypeScript/001基础类型.md
+[002变量声明]: https://github.com/KnifeStone/BiFang/tree/master/document/markdown/TypeScript/002变量声明.md
 
