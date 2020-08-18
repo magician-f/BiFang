@@ -30,6 +30,7 @@ BiFang是专门为Cocos Creator快速开发而生的，专注于组件化的探�
   + [Creator 迷宫的生成：DFS 与 BFS 算法实现](https://forum.cocos.org/t/creator-dfs-bfs/93906)
   + [使用CocosCreator模拟书本翻页效果](https://forum.cocos.org/t/cocoscreator/96358)
   + [又是一个流体渲染方案，但这次让它跑得更流畅](https://forum.cocos.org/t/topic/97137)
+  + [虚拟列表（ScrollView）](https://github.com/gh-kL/cocoscreator-list)
 + 工具
   + [TypeScript脚本解释器，微信热更新方案](https://gitee.com/jianyumofa/qyscript)
   + [字蛛是一个中文字体压缩器](http://font-spider.org/)
