@@ -20,6 +20,8 @@ BiFang是专门为Cocos Creator快速开发而生的，专注于组件化的探�
   + [场景编辑器右键菜单插件](https://github.com/caogtaa/CCSceneMenu/tree/master)  ![](https://img.shields.io/badge/v2.2.2-lightgrey.svg)
   + [属性自动绑定工具](https://forum.cocos.org/t/topic/91159)
   + [CocosCreator 行为树编辑器 - behavior-dog](https://forum.cocos.org/t/cocoscreator-behavior-dog/96393)
+  + [《creator插件开发常用API命令列表》备忘录](https://forum.cocos.org/t/creator-api/92605)
+
 + 项目
   + [贝塞尔路径编辑器](https://github.com/csdjk/BezierCurvePathCreater) ![](https://img.shields.io/badge/v2.2.2-lightgrey.svg)
   + [Shader Effect Demo](https://github.com/zhitaocai/CocosCreatorShaderEffectDemo) ![](https://img.shields.io/badge/v2.2.1-lightgrey.svg)
@@ -31,6 +33,9 @@ BiFang是专门为Cocos Creator快速开发而生的，专注于组件化的探�
   + [使用CocosCreator模拟书本翻页效果](https://forum.cocos.org/t/cocoscreator/96358)
   + [又是一个流体渲染方案，但这次让它跑得更流畅](https://forum.cocos.org/t/topic/97137)
   + [虚拟列表（ScrollView）](https://github.com/gh-kL/cocoscreator-list)
+  + [一个全能的挖孔 Shader](https://forum.cocos.org/t/shader/92482)
+  + [在 Cocos Creator 里画个炫酷的雷达图](https://forum.cocos.org/t/cocos-creator/97187)
+
 + 工具
   + [TypeScript脚本解释器，微信热更新方案](https://gitee.com/jianyumofa/qyscript)
   + [字蛛是一个中文字体压缩器](http://font-spider.org/)
