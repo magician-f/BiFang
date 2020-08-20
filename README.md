@@ -48,6 +48,7 @@ BiFang是专门为Cocos Creator快速开发而生的，专注于组件化的探�
 
 + 进阶
   + [Cocos 2.3 Shader 编写示例](https://forum.cocos.org/t/cocos-2-3-shader/90789)
+  + [CocosCreator 中单元测试入门](https://forum.cocos.org/t/cocoscreator/95482)
   
 + VS Code插件推荐
   + Beautify  : 可以放大标记，调整代码间距，快速格式化代码
