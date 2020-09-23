@@ -21,6 +21,7 @@ BiFang是专门为Cocos Creator快速开发而生的，专注于组件化的探�
   + [属性自动绑定工具](https://forum.cocos.org/t/topic/91159)
   + [CocosCreator 行为树编辑器 - behavior-dog](https://forum.cocos.org/t/cocoscreator-behavior-dog/96393)
   + [《creator插件开发常用API命令列表》备忘录](https://forum.cocos.org/t/creator-api/92605)
+  + [【muzzik插件】：proto-generate(简单实用的基于pbjs/pbts自动生成 js / d.ts 的插件)](https://github.com/1226085293/proto-generate)
 
 + 项目
   + [贝塞尔路径编辑器](https://github.com/csdjk/BezierCurvePathCreater) ![](https://img.shields.io/badge/v2.2.2-lightgrey.svg)
